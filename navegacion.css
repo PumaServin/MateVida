@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+ color: #2c1a03;
+ background: linear-gradient(rgb(184. 147, 106), rgba(68, 67, 0.438));
+}
+/*menú de navegación*/
+header, nav{ background-color: rgb(4,57,39);}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    background-color:#45C020;
+    border: 5px black solid;
+    border-radius: 10px;
+}
+
+
+a:hover{
+    color: rgb(221, 79, 226);
+}
+
+.nav_ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    background-color: #45C020;
+    border: 5px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    font-size: 25px;
+    
+}
+
+@media (width<600px){
+    .nav_ul{
+      grid-template-columns: repeat(3,1fr);
+      height: 60vh;
+    }
+  }
+  
+  @media (width<400px){
+      .nav_ul{
+          grid-template-columns: 1fr;
+          display: none;
+      }
+  
+  .activardesactivar{
+      display: grid;
+  }
+  }
+  
+  i{
+    font-size: 25px;
+    cursor: pointer;
+    
+  }
+
+a{ 
+text-decoration: none;
+font-size: 20px;
+color: #fff;
+}
+
+header{
+    background-color: rgba(37, 114, 30, 0.308);
+}
+nav{
+    width: 95%;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color:#50C056;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+}
+#clientes{
+    height: 100vb;
+    
+}
+
+h1{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 3% 3% 0% 3%;
+    opacity: 0.8;
+    background: url(klematis.jpg) repeat;
+    border: 2px solid rgba(0, 0, 0, 0.87);
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+p{
+ font-family: 'Trebuchet MS', sans-serif;
+ font-size: 26px;
+ text-align: center;
+ color: #121111;
+ opacity: 0.8;
+}
+
+h3{
+    font-size: 55px;
+    font-family: "Antic Didone", serif;
+    text-align: center;
+    color: rgba(5, 39, 5, 0.788);
+}
+.faq{
+    margin: 40px;
+    padding: 30px 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(202, 94, 5, 0.726), rgba(112, 54, 5, 0.726));
+
+}
+summary{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+/*contenedor de imágenes con slider*/
+.contenedorimg{
+    max-height: 420px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px 0px rgb(1,1,1);
+    overflow: hidden  ;
+    position: relative;
+   
+}
+.contimgflex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation-name: moverimg;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.botonav{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: rgb(248, 247, 247);
+
+}
+.imgs{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ 
+}
+
+li{
+    background-color: rgb(9, 126, 34);
+    padding: 20px;
+    margin: 5px;
+}
+li:hover{
+    background-color: rgb(0, 168, 22);
+}
+
+@keyframes moverimg{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left:-300%;}
+    100%{margin-left: -300%;}    
+}
+ 
+.lol{
+    margin: 0 ;
+    border: 2px solid rgb(202, 177, 37);
+    height: 100px;
+    width: 100px;
+}
+
+.ik{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 30px 0;
+    color: #fff;
+}
+
+/*cuerpo principal*/
+main{
+    font-size: 25px;
+    padding: 50px 30px;
+    font-family: "Rock Salt", cursive;
+    background: linear-gradient(#b37224, #6B5336);
+    height: 1000px;
+}
+
+footer{
+background-color: RGB(4,57,39);
+}
+@media (width<600px) {
+    h1{font-size: 30px;}
+    h3{font-size: 40px;}
+}
